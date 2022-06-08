@@ -75,6 +75,8 @@ function calc(){
 function reset(){
     bloco1.value = "";
     bloco2.value = "";
+    bloco3.value = "0";
+    bloco4.value = "0";
 }
 
 // Del button
