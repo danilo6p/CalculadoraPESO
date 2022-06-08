@@ -55,9 +55,20 @@
                     </div>
 
                     <!-- Input to put the results  -->
+                    
                     <div class="calc-top-result row">
-                        <input type="text" class="col-12" id="result" placeholder="0" disabled></input>
+                        <p> Distância em Km </p>
+                        <input type="text" class="col-12" id="bloco1" placeholder="0" ></input>
                     </div>
+                       <p> Peso de Compra em @'s </p>
+                    <div class="calc-top-result row">
+                        <input type="text" class="col-12" id="bloco2" placeholder="0" ></input>
+                    </div>
+
+                    
+
+                   
+
                 </div>
 
                 <!-- Bottom of the Calculator -->
@@ -66,35 +77,21 @@
                     <!-- All the Keys/Buttons for the Calculator Works -->
                     <div class="container">
                         <div class="row">
-                            <input class="col" type="button" value="7" onclick="input('7')">
-                            <input class="col" type="button" value="8" onclick="input('8')">
-                            <input class="col" type="button" value="9" onclick="input('9')">
-                            <input class="col" type="button" value="DEL" id="del" onclick="del()">
-                        </div>
-                        <div class="row">
-                            <input class="col" type="button" value="4" onclick="input('4')">
-                            <input class="col" type="button" value="5" onclick="input('5')">
-                            <input class="col" type="button" value="6" onclick="input('6')">
-                            <input class="col" type="button" value="+" onclick="input('+')">
-                        </div>
-                        <div class="row">
-                            <input class="col" type="button" value="1" onclick="input('1')">
-                            <input class="col" type="button" value="2" onclick="input('2')">
-                            <input class="col" type="button" value="3" onclick="input('3')">
-                            <input class="col" type="button" value="-" onclick="input('-')">
-                        </div>
-                        <div class="row">
-                            <input class="col" type="button" value="." onclick="input('.')">
-                            <input class="col" type="button" value="0" onclick="input('0')">
-                            <input class="col" type="button" value="/" onclick="input('/')">
-                            <input class="col" type="button" value="x" onclick="input('*')">
-                        </div>
-                        <div class="row">
                             <input class="col" type="button" value="RESET" id="reset" onclick="reset()">
                             <input class="col" type="button" value="=" id="equals" onclick="calc()">
                         </div>
                     </div>
 
+                </div>
+     <br>
+                <p> Perda em Kg </p>
+                <div class="calc-top-result row">
+                    <input type="text" class="col-12" id="bloco3" placeholder="0" disabled ></input>
+                </div>
+                
+                <p> Perda em @'s </p>
+                <div class="calc-top-result row">
+                    <input type="text" class="col-12" id="bloco4" placeholder="0" disabled></input>
                 </div>
 
             </div>
