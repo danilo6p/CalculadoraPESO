@@ -5,14 +5,28 @@
 */ 
 
 // get the result element
-let result  = document.getElementById("result");
-
 
 let bloco1  = document.getElementById("bloco1");
 
 let bloco2  = document.getElementById("bloco2");
 
-let bloco3  = document.getElementById("bloco3");
+
+
+
+const bloco3 = document.querySelector("#bloco3");
+
+const bloco4 = document.querySelector("#bloco4");
+
+bloco1.value = "";
+bloco2.value = "";
+
+bloco3.value = "";
+bloco4.value = "";
+
+ INTERCEPT = -34.77688217;
+ D = 0.01025451;
+ PC = 10.84492912;
+ PCQ = -0.46311749;
 
 // Input numbers by key pressed
 function input(num){
@@ -22,18 +36,31 @@ function input(num){
 
 // Calculator logic
 function calc(){
-    if(result.value != ""){
-        let bloco1  = bloco1.value;
-        let bloco2  = bloco2.value;
-       let result;
+     
+     bloco1texto  = bloco1.value;
+     bloco2texto  = bloco2.value;
 
-       result = bloco1 + bloco2;
+     valor1 = parseFloat(bloco1texto);
+     valor2 = parseFloat(bloco2texto);
+
+     let resulto;
+
+     parte2 = 
+
+     resulto = intercept+(D*valor1)+(PC*valor2)+(PCQ*(valor2*valor2));
        
-       bloco3.value = result;
+    bloco3.value = resulto;
+   
+   if(result.value != ""){
+       
+      
 
     } else{
         alert("Erro! Adicione valores válidos.")
     }
+
+    
+
 }
 
 // Reset button
